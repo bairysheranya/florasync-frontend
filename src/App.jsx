@@ -270,7 +270,7 @@ export default function App() {
     formData.append('image', selectedImage);
 
     try {
-      const res = await fetch('http://localhost:8000/analyze', {
+      const res = await fetch('https://florasync-backend.onrender.com/analyze', {
         method: 'POST',
         body: formData,
       });
